@@ -5,6 +5,7 @@ const AuthRouter = require('./routes/AuthRouter')
 
 require('./models/db')
 const app = express();
+const port = process.env.PORT || 4000;
 app.use(cors())
 app.use(express.json())
 app.get('/ping', async (req, res) => {
@@ -14,6 +15,6 @@ app.get('/ping', async (req, res) => {
 
 app.use('/api',AuthRouter)
 
-app.listen(4000,()=>{
-console.log("Your app is running port:4000")
-})
+apppp.listen(port, () => {
+    console.log(`Example app listening on port ${port}`)
+  })
