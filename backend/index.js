@@ -15,6 +15,6 @@ app.get('/ping', async (req, res) => {
 
 app.use('/api',AuthRouter)
 
-apppp.listen(port, () => {
+app.listen(port, () => {
     console.log(`Example app listening on port ${port}`)
   })
