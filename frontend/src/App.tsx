@@ -52,7 +52,7 @@ export const App: React.FC = () => {
     // eslint-disable-next-line @typescript-eslint/no-unused-vars
     } catch (err) {
     
-      toast.error('There was an error submitting the form:');
+      toast.error(`There was an error submitting the form: ${err}`);
     
     }
   };
